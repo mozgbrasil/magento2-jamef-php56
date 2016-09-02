@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Mozg. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <mozg_jamef>
+                <!-- BASE -->
+                <model>Mozg\Jamef\Model\Carrier</model>
+                <active>0</active>
+                <sort_order>0</sort_order>
+                <title>Jamef (powered by MOZG)</title>
+                <allowed_methods>1,2</allowed_methods>
+                <free_method></free_method>
+                <!--<max_package_weight>600</max_package_weight>-->
+                <handling_type>F</handling_type>
+                <!--<handling_action>O</handling_action>-->
+                <handling_fee>1</handling_fee>
+                <showmethod>1</showmethod>
+                <debug>1</debug>
+                <sallowspecific>1</sallowspecific>
+                <specificcountry>BR</specificcountry>
+                <!-- DEFAULT -->
+                <remetente_cnpj>12417449000139</remetente_cnpj>
+                <municipio_origem>Belo Horizonte</municipio_origem>
+                <estado_origem>MG</estado_origem>
+                <filial_coleta>02</filial_coleta>
+                <tipo_produto>000004</tipo_produto>
+                <prazo_entrega>1</prazo_entrega>
+                <msgprazo>%s - Em média %d dia(s)</msgprazo>
+                <display_result_error>1</display_result_error>
+            </mozg_jamef>
+        </carriers>
+    </default>
+</config>
